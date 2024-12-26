@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reconnaissance on 0xHyp3rion Blog</title>
+    <link>https://0xhyp3rion.github.io/tags/reconnaissance/</link>
+    <description>Recent content in Reconnaissance on 0xHyp3rion Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Dec 2024 10:50:22 -0600</lastBuildDate>
+    <atom:link href="https://0xhyp3rion.github.io/tags/reconnaissance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OSINT Challenge</title>
+      <link>https://0xhyp3rion.github.io/posts/osint-challenge/</link>
+      <pubDate>Thu, 26 Dec 2024 10:50:22 -0600</pubDate>
+      <guid>https://0xhyp3rion.github.io/posts/osint-challenge/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;A little backstory to this post: I was socializing with some of my Cybersecurity friends in an online community when one of them (who was travelling for work at the time) posted the below image, and said &amp;ldquo;OSINT challenge! Where am I?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://0xhyp3rion.github.io/images/osint_challenge/osint_challenge_full.jpg&#34; alt=&#34;osint_challenge_full.jpg&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I get excited when these types of &amp;ldquo;challenges&amp;rdquo; are presented. They pique my curiosity, and it&amp;rsquo;s also a great little exercise in critical thinking. This writeup will elaborate on my thought process from start to finish and methodology to arrive at a conclusion, but a big disclaimer here is that it&amp;rsquo;s never a one-size-fits-all solution, and anyone&amp;rsquo;s results and process will differ. My ultimate hope is that if you&amp;rsquo;re new to OSINT, or looking to get other insights, that this will help to some degree.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
