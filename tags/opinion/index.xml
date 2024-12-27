@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Opinion on 0xHyp3rion Blog</title>
+    <link>https://0xhyp3rion.github.io/tags/opinion/</link>
+    <description>Recent content in Opinion on 0xHyp3rion Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Dec 2024 17:24:24 -0600</lastBuildDate>
+    <atom:link href="https://0xhyp3rion.github.io/tags/opinion/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cyber Snake Oil: The Dark Side of MSSPs</title>
+      <link>https://0xhyp3rion.github.io/posts/cyber-snake-oil/</link>
+      <pubDate>Fri, 27 Dec 2024 17:24:24 -0600</pubDate>
+      <guid>https://0xhyp3rion.github.io/posts/cyber-snake-oil/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Disclaimer: Despite the tone of this article, I&amp;rsquo;m not making the claim that all MSSPs are useless, and I do know that there are many MSSPs that believe in their overall mission and deliver quality results. This article isn&amp;rsquo;t about the good apples in the bunch.&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;managed-security&#34;&gt;Managed Security&lt;/h2&gt;&#xA;&lt;p&gt;The state of our cybersecurity posture in the US is pitiful. Commentators and industry experts have for years now been pointing out the talent shortage that exists in the industry, as well as the various ailments that plague the average SOC analyst and CISO on a day-to-day basis (alert fatigue, long hours, high liability, stubborn executives allocating slim budgets to IT teams, and beyond). Outside of the issues for industry professionals, individual organizations also have a problem: Cybersecurity can be expensive. Forming an in-house team requires talent, training, and technology, all of which come at a hefty price tag that can easily exceed the total net revenues of a small to mid-sized business. To counter this problem, MSSPs, or Managed Security Service Providers (Security as a Service) started becoming a business model. These companies promise that they&amp;rsquo;ll solve all of your cybersecurity needs, have impressive marketing, and affordable rates (typically with a contract that locks you in for a set amount of time) that allow you to focus more on your bottom line while they shoulder the burden of focusing on the security threats that might impact your organization. The charming words are all the same: They&amp;rsquo;ll focus on your organization&amp;rsquo;s needs and tailor all of it to what you need to give you the most peace of mind. They have a dedicated SOC team, online 24/7, monitoring your environment and ready to react when the unpredictable happens. Think of it like your average home security system like ADT, except for computers safeguarding the data of your company and your customers. After Russia invaded Ukraine in 2022, the need for domestic cybersecurity solutions exploded in popularity due to rising fears of a cyber war with Russia, and business has been booming ever since.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

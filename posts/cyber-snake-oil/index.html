@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Disclaimer: Despite the tone of this article, I&rsquo;m not making the claim that all MSSPs are useless, and I do know that there are many MSSPs that believe in their overall mission and deliver quality results. This article isn&rsquo;t about the good apples in the bunch.
+Managed Security The state of our cybersecurity posture in the US is pitiful. Commentators and industry experts have for years now been pointing out the talent shortage that exists in the industry, as well as the various ailments that plague the average SOC analyst and CISO on a day-to-day basis (alert fatigue, long hours, high liability, stubborn executives allocating slim budgets to IT teams, and beyond). Outside of the issues for industry professionals, individual organizations also have a problem: Cybersecurity can be expensive. Forming an in-house team requires talent, training, and technology, all of which come at a hefty price tag that can easily exceed the total net revenues of a small to mid-sized business. To counter this problem, MSSPs, or Managed Security Service Providers (Security as a Service) started becoming a business model. These companies promise that they&rsquo;ll solve all of your cybersecurity needs, have impressive marketing, and affordable rates (typically with a contract that locks you in for a set amount of time) that allow you to focus more on your bottom line while they shoulder the burden of focusing on the security threats that might impact your organization. The charming words are all the same: They&rsquo;ll focus on your organization&rsquo;s needs and tailor all of it to what you need to give you the most peace of mind. They have a dedicated SOC team, online 24/7, monitoring your environment and ready to react when the unpredictable happens. Think of it like your average home security system like ADT, except for computers safeguarding the data of your company and your customers. After Russia invaded Ukraine in 2022, the need for domestic cybersecurity solutions exploded in popularity due to rising fears of a cyber war with Russia, and business has been booming ever since.
+" />
+<meta name="keywords" content="homepage, blog, opinion, commentary, mssp, industry" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://0xhyp3rion.github.io/posts/cyber-snake-oil/" />
+
+
+    <title>
+        
+            Cyber Snake Oil: The Dark Side of MSSPs :: 0xHyp3rion Blog 
+        
+    </title>
+
+
+
+
+
+  <link rel="stylesheet" href="/main.min.244183cde1a38e0b08f82c11791181288f9aac1cc9618cd6f4e9e7710c5768ba.css" integrity="sha256-JEGDzeGjjgsI&#43;CwReRGBKI&#43;arBzJYYzW9OnncQxXaLo=" crossorigin="anonymous">
+
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+
+  <meta itemprop="name" content="Cyber Snake Oil: The Dark Side of MSSPs">
+  <meta itemprop="description" content="Disclaimer: Despite the tone of this article, I’m not making the claim that all MSSPs are useless, and I do know that there are many MSSPs that believe in their overall mission and deliver quality results. This article isn’t about the good apples in the bunch.
+Managed Security The state of our cybersecurity posture in the US is pitiful. Commentators and industry experts have for years now been pointing out the talent shortage that exists in the industry, as well as the various ailments that plague the average SOC analyst and CISO on a day-to-day basis (alert fatigue, long hours, high liability, stubborn executives allocating slim budgets to IT teams, and beyond). Outside of the issues for industry professionals, individual organizations also have a problem: Cybersecurity can be expensive. Forming an in-house team requires talent, training, and technology, all of which come at a hefty price tag that can easily exceed the total net revenues of a small to mid-sized business. To counter this problem, MSSPs, or Managed Security Service Providers (Security as a Service) started becoming a business model. These companies promise that they’ll solve all of your cybersecurity needs, have impressive marketing, and affordable rates (typically with a contract that locks you in for a set amount of time) that allow you to focus more on your bottom line while they shoulder the burden of focusing on the security threats that might impact your organization. The charming words are all the same: They’ll focus on your organization’s needs and tailor all of it to what you need to give you the most peace of mind. They have a dedicated SOC team, online 24/7, monitoring your environment and ready to react when the unpredictable happens. Think of it like your average home security system like ADT, except for computers safeguarding the data of your company and your customers. After Russia invaded Ukraine in 2022, the need for domestic cybersecurity solutions exploded in popularity due to rising fears of a cyber war with Russia, and business has been booming ever since.">
+  <meta itemprop="datePublished" content="2024-12-27T17:24:24-06:00">
+  <meta itemprop="dateModified" content="2024-12-27T17:24:24-06:00">
+  <meta itemprop="wordCount" content="3122">
+  <meta itemprop="image" content="https://0xhyp3rion.github.io/">
+  <meta itemprop="keywords" content="Opinion,Commentary,Mssp,Industry">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://0xhyp3rion.github.io/">
+  <meta name="twitter:title" content="Cyber Snake Oil: The Dark Side of MSSPs">
+  <meta name="twitter:description" content="Disclaimer: Despite the tone of this article, I’m not making the claim that all MSSPs are useless, and I do know that there are many MSSPs that believe in their overall mission and deliver quality results. This article isn’t about the good apples in the bunch.
+Managed Security The state of our cybersecurity posture in the US is pitiful. Commentators and industry experts have for years now been pointing out the talent shortage that exists in the industry, as well as the various ailments that plague the average SOC analyst and CISO on a day-to-day basis (alert fatigue, long hours, high liability, stubborn executives allocating slim budgets to IT teams, and beyond). Outside of the issues for industry professionals, individual organizations also have a problem: Cybersecurity can be expensive. Forming an in-house team requires talent, training, and technology, all of which come at a hefty price tag that can easily exceed the total net revenues of a small to mid-sized business. To counter this problem, MSSPs, or Managed Security Service Providers (Security as a Service) started becoming a business model. These companies promise that they’ll solve all of your cybersecurity needs, have impressive marketing, and affordable rates (typically with a contract that locks you in for a set amount of time) that allow you to focus more on your bottom line while they shoulder the burden of focusing on the security threats that might impact your organization. The charming words are all the same: They’ll focus on your organization’s needs and tailor all of it to what you need to give you the most peace of mind. They have a dedicated SOC team, online 24/7, monitoring your environment and ready to react when the unpredictable happens. Think of it like your average home security system like ADT, except for computers safeguarding the data of your company and your customers. After Russia invaded Ukraine in 2022, the need for domestic cybersecurity solutions exploded in popularity due to rising fears of a cyber war with Russia, and business has been booming ever since.">
+
+
+
+    <meta property="og:url" content="https://0xhyp3rion.github.io/posts/cyber-snake-oil/">
+  <meta property="og:site_name" content="0xHyp3rion Blog">
+  <meta property="og:title" content="Cyber Snake Oil: The Dark Side of MSSPs">
+  <meta property="og:description" content="Disclaimer: Despite the tone of this article, I’m not making the claim that all MSSPs are useless, and I do know that there are many MSSPs that believe in their overall mission and deliver quality results. This article isn’t about the good apples in the bunch.
+Managed Security The state of our cybersecurity posture in the US is pitiful. Commentators and industry experts have for years now been pointing out the talent shortage that exists in the industry, as well as the various ailments that plague the average SOC analyst and CISO on a day-to-day basis (alert fatigue, long hours, high liability, stubborn executives allocating slim budgets to IT teams, and beyond). Outside of the issues for industry professionals, individual organizations also have a problem: Cybersecurity can be expensive. Forming an in-house team requires talent, training, and technology, all of which come at a hefty price tag that can easily exceed the total net revenues of a small to mid-sized business. To counter this problem, MSSPs, or Managed Security Service Providers (Security as a Service) started becoming a business model. These companies promise that they’ll solve all of your cybersecurity needs, have impressive marketing, and affordable rates (typically with a contract that locks you in for a set amount of time) that allow you to focus more on your bottom line while they shoulder the burden of focusing on the security threats that might impact your organization. The charming words are all the same: They’ll focus on your organization’s needs and tailor all of it to what you need to give you the most peace of mind. They have a dedicated SOC team, online 24/7, monitoring your environment and ready to react when the unpredictable happens. Think of it like your average home security system like ADT, except for computers safeguarding the data of your company and your customers. After Russia invaded Ukraine in 2022, the need for domestic cybersecurity solutions exploded in popularity due to rising fears of a cyber war with Russia, and business has been booming ever since.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-27T17:24:24-06:00">
+    <meta property="article:modified_time" content="2024-12-27T17:24:24-06:00">
+    <meta property="article:tag" content="Opinion">
+    <meta property="article:tag" content="Commentary">
+    <meta property="article:tag" content="Mssp">
+    <meta property="article:tag" content="Industry">
+    <meta property="og:image" content="https://0xhyp3rion.github.io/">
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-12-27 17:24:24 -0600 CST" />
+
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                hello</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/posts">Blog</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        15 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://0xhyp3rion.github.io/posts/cyber-snake-oil/">Cyber Snake Oil: The Dark Side of MSSPs</a>
+      </h1>
+
+      
+
+      
+
+      
+
+      <div class="post-content">
+        <p><em>Disclaimer: Despite the tone of this article, I&rsquo;m not making the claim that all MSSPs are useless, and I do know that there are many MSSPs that believe in their overall mission and deliver quality results. This article isn&rsquo;t about the good apples in the bunch.</em></p>
+<h2 id="managed-security">Managed Security</h2>
+<p>The state of our cybersecurity posture in the US is pitiful. Commentators and industry experts have for years now been pointing out the talent shortage that exists in the industry, as well as the various ailments that plague the average SOC analyst and CISO on a day-to-day basis (alert fatigue, long hours, high liability, stubborn executives allocating slim budgets to IT teams, and beyond). Outside of the issues for industry professionals, individual organizations also have a problem: Cybersecurity can be expensive. Forming an in-house team requires talent, training, and technology, all of which come at a hefty price tag that can easily exceed the total net revenues of a small to mid-sized business. To counter this problem, MSSPs, or Managed Security Service Providers (Security as a Service) started becoming a business model. These companies promise that they&rsquo;ll solve all of your cybersecurity needs, have impressive marketing, and affordable rates (typically with a contract that locks you in for a set amount of time) that allow you to focus more on your bottom line while they shoulder the burden of focusing on the security threats that might impact your organization. The charming words are all the same: They&rsquo;ll focus on your organization&rsquo;s needs and tailor all of it to what you need to give you the most peace of mind. They have a dedicated SOC team, online 24/7, monitoring your environment and ready to react when the unpredictable happens. Think of it like your average home security system like ADT, except for computers safeguarding the data of your company and your customers. After Russia invaded Ukraine in 2022, the need for domestic cybersecurity solutions exploded in popularity due to rising fears of a cyber war with Russia, and business has been booming ever since.</p>
+<h2 id="predatory-business-model">Predatory Business Model</h2>
+<p>It won&rsquo;t shock anyone to point out that in a highly lucrative industry such as the Security as a Service market that these companies are only in it for the money. I&rsquo;ll even be so bold as to state that none of these companies care about the safety of your data; but you can be guaranteed that they will care and do everything under the sun to avoid liability if their negligence results in a breach for your company. An army of lawyers and piles of liability insurance policies sit at the ready, as well as carefully worded contracts that cover (almost) every possible scenario that can possibly warrant these safeguards being utilized. The likelihood of them being sued for negligence is fairly slim, however, because the reality is that since MSSPs focus on attracting small to midsized businesses that can&rsquo;t afford a proper cybersecurity program, their target customers are less likely to employ those with the level of expertise needed to properly understand and navigate through cybersecurity threats. It&rsquo;s like any other predatory business model that seeks to profit off of the naitivity of their customer base. The biggest exceptions to this rule are the IT Managers for the larger companies, who, despite being comfortable in their positions, get to pull out their hair in frustration with the shoddy security product they&rsquo;re receiving but are forced to utilize due to their almost non-existent budget which only allows them to outsource their cybersecurity solution rather than implement a rounded program. This is because the executives allocating that budget don&rsquo;t know what they&rsquo;re paying for, but the reports generated by the MSSP they&rsquo;ve hired are flooded with data showing how effective the solution is. On paper, at least.</p>
+<h2 id="reports-reports-reports">Reports, Reports, Reports</h2>
+<p>Reports are key. If you&rsquo;ve ever worked in an office environment, you&rsquo;ve more than likely handled at least one report, and you would know that the reports get consolidated into other reports and then compiled into another report until a final version of a report then lands its way to the desks of the executives of the company. From these reports, whatever they&rsquo;re detailing, key decisions are made, budgets are allocated, contractors are called up, and the business makes its strategic moves accordingly. MSSPs produce reports for their customers that detail the overall results of their security product, and to the non-proficient reader of said report, they can make or break whether the company continues utilizing the same vendor for their security needs. It is, therefore, imperative for the MSSP to pad these reports with as much data as possible, but can&rsquo;t lie, because that would open them up to liability. So what&rsquo;s the effective solution? Increase the volume of events that are detected by the security solution.</p>
+<h2 id="the-siems">The SIEMs</h2>
+<p>If you&rsquo;re already proficient in how SIEMs function, you scan skip this paragraph. If not, consider this: Your average security solution involves software (called an &ldquo;agent&rdquo;) that is installed on computers and servers. The agent collects log files from the device and directs these log files to get sent to a central server. This central server has a piece of software installed on it called a SIEM (Security Integration and Endpoint Management). The SIEM is a specialized program that parses log file data into a readable, sortable, and accessible format and can be &ldquo;tuned&rdquo; to generate alerts (similar to an IT support ticket) that highlight specific concerns detected in the logs, depending on how the SIEM is tuned. The more sensitive it is, the more alerts will generate. The less sensitive, the less alerts. For example, a SIEM can be tuned with a rule to generate an alert if an employee logs on to their computer after normal business hours, from which the analyst will then review the alert and correlating log files to determine if the activity is safe or a security breach. If the activity is considered a breach, they will raise the alert to the incident response team which will then take over handling and determine the next steps to be taken. The more sensitive a SIEM is tuned, the more likelihood of false-positive detections occurring; that is, a detection that the SIEM believes is a breach, but in actuality is safe and benign activity. This occurs very frequently with internet traffic. Think of it like living in a house with the door accessible by a busy sidewalk. Throughout the day you would expect various people to test the door handle and knock. It would be irritating to be notified or alerted every single time someone knocked. The same is applicable to internet traffic &ldquo;testing&rdquo; if doors are open on our systems. We don&rsquo;t need to know when someone tests the door, since it happens to frequently; but we would want to know if the door gets kicked in, or the lock gets picked, as well as track every action that the intruder took while they were inside the building. A SIEM is remarkably relevant to this analogy, and it&rsquo;s where the reports mentioned earlier get padded.</p>
+<p>Many MSSPs try to push their own in-house security products. Many of these are reskins of established SIEMs already on the market, some of which you can find for free (think Elastic/Kibana).</p>
+<h2 id="back-to-reports">Back to Reports</h2>
+<p>It&rsquo;s in the sensitivity of the SIEM solution that can make or break the business model based off of the appearance of it being an effective solution. By populating a report with data reflecting high volumes of benign detections, on paper and to the busy or otherwise non-technical executive reviewing the report, it will appear that the solution is preventing multitudes of potential breaches and playing a key role in the safeguarding of the company&rsquo;s systems and data. It&rsquo;s not lying, because it&rsquo;s showing security events that have actually occurred, and on a positive note, also provides more robust data for an analyst to dig through to baseline patterns of activity and make better-informed decisions; but the average SOC analyst is buried in these benign alerts and does not have the time, and in many cases the resources, to make an informed decision.</p>
+<h2 id="alert-fatigue">Alert Fatigue</h2>
+<p>This creates a common problem in the industry known as alert fatigue, which is a term used to describe the mental exhaustion that occurs after combing through endless alerts on a daily basis, typically from 10 to 12 hours a day. Compound this with the fact that MSSPs monitor more than a single organization, and every organization owns multiple computers that produce thousands of log files per day. I can attest from experience that I have been the only SOC analyst on duty during many shifts reviewing the alerts and having nobody to reach out to for guidance or support. This dilemma creates a security risk in itself because as the human brain becomes exhausted from being overwhelmed with information, the small details that could be a result of big issues such as a breach have a higher likelihood of being overlooked. <!-- raw HTML omitted -->. It also is a form of false advertising when the MSSP is advertising to its customers that it has a fully-staffed 24/7 SOC team, when the reality is the SOC team is understaffed, and overwhelmed.</p>
+<h2 id="no-training">No Training</h2>
+<p>Another problem plaguing SOC teams is that training is hard to come by. Many, if not most Cybersecurity professionals embark on this specialization within the field of Information Technology because they have a passion for the nature of the work, but it&rsquo;s difficult to get your foot in the door due to the high level of proficiency and trust that employers require due to the high level of liability and risk involved with the nature of the work. As a result, it&rsquo;s rare to see entry level jobs being posted, with most positions requiring years of experience, a degree in the field, and multiple security-related IT certifications under their belt. With this, being hired means you&rsquo;re expected to know how to do your job without being trained, which works well for a highly motivated self-starter, but not very well for people who don&rsquo;t know how to be that. MSSPs are more likely to hire individuals at entry level who do not have the experience, because for this business model, it&rsquo;s more important to review and clear alerts than it is to necessarily know what you&rsquo;re doing. What makes this work is that these individuals will be willing to expect a significantly lower pay scale than the industry median for entry level, because the employee is looking to get the experience, and the employer is capitalizing on the fact that they can underpay them because, well, it&rsquo;s not like the employee is going to get a better paying job somewhere else for now. I have seen the risk in this play out, with underqualified and less than knowledgeable SOC analysts clearing out glaring true-positive detections of breaches occurring, which resulted in the attacker getting to the stage of deploying ransomware; all because they didn&rsquo;t know how to review or make sense of the information they were looking at, because they were not adequately trained.</p>
+<h2 id="security-theater">Security Theater</h2>
+<p>There is a concept that is known in the broader security industry as &ldquo;security theater.&rdquo; Security guard firms thrive on this model by selling their employees dressed up in uniforms that, from first glance, give the guard an appearance of authority or even law enforcement, which acts as a proactive deterrent for any do-no-gooders causing them to feel intimidated or fearing they&rsquo;ll get caught and think twice about performing their illicit action. This results in less loss for the customer, as well as a feeling of safety for the customer and their clientele by seeing the physical presence of a security guard on their premises. During my time working in uniformed security, I realized the effectiveness of this concept by taking pride in my appearance and keeping myself in shape so that even if someone got close enough to me to realize I wasn&rsquo;t a police officer, my demeanor and confidence was still enough that they wouldn&rsquo;t want to mess with me. A disheveled coworker, on the other hand, would complain to me about all of the altercations and incidents that would happen during his shifts. I would shrug and just tell him to iron his uniform. The same concept exists in the MSSP market, but is slightly different, as a security solution is not a deterrent for a well-rounded attacker. Security functions a little differently in the IT world, where the threats are ever present, but can&rsquo;t be discerned until some form of tangible evidence exists that proves there is something amiss; but to a paying customer who does not understand the evolving digital threat landscape and the nature of cybersecurity, they will believe themselves to be protected from the clever marketing and promises made by the security vendor. Ironically, all of the ransomware incidents I&rsquo;ve had to respond to were a result of either the security product or an analyst failing to do what they were deployed to do, and the initial access was obtained by the attacker due to trivial, preventable misconfigurations that the customer failed to plug, assuming that the security product they were paying for would keep their environment safe.</p>
+<h2 id="were-fed">We&rsquo;re F***ed</h2>
+<p>Back to the opening line of this article, the state of our cybersecurity posture in the US is pitiful. Small to midsize companies are increasingly moving towards MSSPs to provide them the piece of mind they need to manage their cybersecurity posture, alongside likely being required to have some form of cybersecurity program implemented in their operation to be covered by their insurance company with non-stop prevalence of ransomware. While the intentions are noble, the reality is that by relying on these vendors for the illusion of a secure digital environment without actually understanding any of it is not only preying on naitivity, it&rsquo;s also creating the potential for a crisis in the making if, and likely when, a direct conflict breaks out with a foreign power. Despite what we are told by our government and the big tech companies, we are in a very vulnerable position. We have a near-complete reliance on network-attached devices to store information, communicate, and even to operate and function critical equipment and infrastructure: Hospitals, water treatment plants, electric grids, and beyond are all reliant on internet connectivity and computer hardware to function now in the 21st century, and in the words of Mikko Hyponen, &ldquo;If it&rsquo;s smart, it&rsquo;s vulnerable.&rdquo; This is especially concerning when we consider that when corporate and government purchases need to be made, the cheaper the better, and the cheaper options are usually produced in China exposing supply chain vulnerabilities with many hardware components being unsuitable for use due to being preloaded with malware and spyware. Hauwei was so prevalent with this that the US Government even had to issue an advisory in <!-- raw HTML omitted --> discouraging phone carriers from selling the devices. What this tells us is that cybersecurity is now more critical than ever because it&rsquo;s not simply about data anymore, it&rsquo;s about human lives. Take for example the Stuxnet virus from <!-- raw HTML omitted --> that attempted to sabatoge the Iranian nuclear program, and while not entirely successful, would have resulted in mass casualties if the centrifuges had failed and caused an explosion. Regardless of the moral position of the Iranian Nuclear Program, the takeaway from this is that a computer fault triggered by a virus could have caused human death. Please take a moment to let that sink in.</p>
+<p>Where we&rsquo;re additionally vulnerable is in our level of talent. We are a society that is focused on consuming and obtaining wealth, and if an industry does not pay or show signs of stability it will not attract quality talent. This has already been highlighted as a fear in a recent article by whomawhatever <!-- raw HTML omitted --> pointing out that the massive layoffs affecting the tech sector in 2022 would result in less prospective students studying for and embarking for a career in the tech sector. This is particularly concerning for the cybersecurity arm of tech, which is not as interesting or attractive as developing a video game, and already faces a shortage of <!-- raw HTML omitted --> employees to get us up to speed. When we compare this to nations such as China, which has already developed and implemented artificial intelligence well beyond our own capabilities, and Russia, which <!-- raw HTML omitted --> prepares and educates its primary school students in computer science en masse, and then look at our own population, where 50% of today&rsquo;s youth <!-- raw HTML omitted --> aspire to be social media influencers and <!-- raw HTML omitted --> just expect technology to work since they were born with it, without actually knowing how it works (which, ironically, makes Gen-Z even more vulnerable for falling victim to online scams than baby boomers <!-- raw HTML omitted -->), I don&rsquo;t have high hopes for the next decade. I may be fear mongering here but I do believe that we have already lost the cyber arms race, and it&rsquo;s not a matter of if, but when, until we are in front of that loss face-to-face with power outages and contaminated water.</p>
+<h2 id="so-what-can-we-do-about-it">So What Can We Do About It?</h2>
+<p>Idealistically, and unrealistically, what is needed most is a culture shift in how we view technology and prepare our citizens for the future. We&rsquo;re already a generation behind, and I do not believe that we will bridge that gap until long after it has been too late, since the problem as a whole is not as simple as passing legislation and forcing new standards and mindsets to break through. Economically, we are driven by profitability and consumption, which has resulted in the most profitable sectors of tech catering to the consumer market with innovations that are intended to improve our lives in some way, for better or for worse. If we were to compare tech innovations side by side with our largest potential adversaries in the event of a major or global conflict, that being Russia, China, and Iran, we would see the aforementioned countries lacking in consumer tech innovations while having robust defensive, offensive, and surveillance-oriented technology; and ironically, the more we invest in innovations that somehow fill a need or aim to improve quality of life, we create security vulnerabilities in the process. The government has thankfully started noticing this gap and is trying (somewhat) to fill it, with the creation of the CISA under the DHS arm as well as <!-- raw HTML omitted --> as well as initiatives to encourage future innovators to aspire towards cybersecurity.</p>
+<p>Realistically, we have to turn to ourselves and the organizations we&rsquo;re in charge of or employed by to make the necessary changes in mindset and culture that are needed to prepare ourselves for the future, which is already here.</p>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://0xhyp3rion.github.io/tags/opinion/">opinion</a></span>
+        <span class="tag"><a href="https://0xhyp3rion.github.io/tags/commentary/">commentary</a></span>
+        <span class="tag"><a href="https://0xhyp3rion.github.io/tags/mssp/">mssp</a></span>
+        <span class="tag"><a href="https://0xhyp3rion.github.io/tags/industry/">industry</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        3122 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2024-12-27 17:24
+        
+
+         
+          
+        
+      </p>
+    </div>
+      <hr />
+      <div class="sharing-buttons">
+        
+<a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2f0xhyp3rion.github.io%2fposts%2fcyber-snake-oil%2f" target="_blank" rel="noopener" aria-label="" title="Share on facebook">
+  <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?url=https%3a%2f%2f0xhyp3rion.github.io%2fposts%2fcyber-snake-oil%2f" target="_blank" rel="noopener" aria-label="" title="Share on twitter">
+  <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+      <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Cyber%20Snake%20Oil%3a%20The%20Dark%20Side%20of%20MSSPs&amp;caption=Cyber%20Snake%20Oil%3a%20The%20Dark%20Side%20of%20MSSPs&amp;canonicalUrl=https%3a%2f%2f0xhyp3rion.github.io%2fposts%2fcyber-snake-oil%2f" target="_blank" rel="noopener" aria-label="" title="Share on tumblr">
+  <div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--small">
+    <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.178l.011.002z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="mailto:?subject=Cyber%20Snake%20Oil%3a%20The%20Dark%20Side%20of%20MSSPs&amp;body=https%3a%2f%2f0xhyp3rion.github.io%2fposts%2fcyber-snake-oil%2f" target="_self" rel="noopener" aria-label="" title="Share via email">
+  <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=https%3a%2f%2f0xhyp3rion.github.io%2fposts%2fcyber-snake-oil%2f&amp;media=https%3a%2f%2f0xhyp3rion.github.io%2fposts%2fcyber-snake-oil%2f;description=Cyber%20Snake%20Oil%3a%20The%20Dark%20Side%20of%20MSSPs" target="_blank" rel="noopener" aria-label="" title="Share on pinterest">
+  <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2f0xhyp3rion.github.io%2fposts%2fcyber-snake-oil%2f&amp;title=Cyber%20Snake%20Oil%3a%20The%20Dark%20Side%20of%20MSSPs&amp;summary=Cyber%20Snake%20Oil%3a%20The%20Dark%20Side%20of%20MSSPs&amp;source=https%3a%2f%2f0xhyp3rion.github.io%2fposts%2fcyber-snake-oil%2f" target="_blank" rel="noopener" aria-label="" title="Share on linkedin">
+  <div class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://reddit.com/submit/?url=https%3a%2f%2f0xhyp3rion.github.io%2fposts%2fcyber-snake-oil%2f&amp;resubmit=true&amp;title=Cyber%20Snake%20Oil%3a%20The%20Dark%20Side%20of%20MSSPs" target="_blank" rel="noopener" aria-label="" title="Share on reddit">
+  <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://www.xing.com/app/user?op=share;url=https%3a%2f%2f0xhyp3rion.github.io%2fposts%2fcyber-snake-oil%2f;title=Cyber%20Snake%20Oil%3a%20The%20Dark%20Side%20of%20MSSPs" target="_blank" rel="noopener" aria-label="" title="Share on xing">
+  <div class="resp-sharing-button resp-sharing-button--xing resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L1.86 16.051c-.099.188-.093.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l3.734-6.609-2.378-4.155c-.172-.315-.434-.659-.962-.659H3.648v.016z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="whatsapp://send?text=Cyber%20Snake%20Oil%3a%20The%20Dark%20Side%20of%20MSSPs%20https%3a%2f%2f0xhyp3rion.github.io%2fposts%2fcyber-snake-oil%2f" target="_blank" rel="noopener" aria-label="" title="Share on whatsapp">
+  <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2f0xhyp3rion.github.io%2fposts%2fcyber-snake-oil%2f&amp;t=Cyber%20Snake%20Oil%3a%20The%20Dark%20Side%20of%20MSSPs" target="_blank" rel="noopener" aria-label="" title="Share on hacker news">
+  <div class="resp-sharing-button resp-sharing-button--hackernews resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z"/></svg>
+    </div>
+  </div>
+</a>
+
+
+<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=Cyber%20Snake%20Oil%3a%20The%20Dark%20Side%20of%20MSSPs&amp;url=https%3a%2f%2f0xhyp3rion.github.io%2fposts%2fcyber-snake-oil%2f" target="_blank" rel="noopener" aria-label="" title="Share on telegram">
+  <div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+    </div>
+  </div>
+</a>
+
+      </div>
+
+    
+    <div class="pagination">
+        
+
+        <div class="pagination__buttons">
+            
+
+            
+            <span class="button next">
+                <a href="https://0xhyp3rion.github.io/posts/navigating-cybersecurity/">
+                    <span class="button__text">Unravelling the Complex World of Cybersecurity</span>
+                    <span class="button__icon">→</span>
+                </a>
+            </span>
+            
+        </div>
+    </div>
+
+
+    
+
+    
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.e89fda0f29b95d33f6f4224dd9e5cf69d84aff3818be2b0d73e731689cc374261b016d17d46f8381962fb4a1577ba3017b1f23509d894f6e66431f988c00889e.js" integrity="sha512-6J/aDym5XTP29CJN2eXPadhK/zgYvisNc&#43;cxaJzDdCYbAW0X1G&#43;DgZYvtKFXe6MBex8jUJ2JT25mQx&#43;YjACIng=="></script>
+
+
+
+
+    </body>
+</html>
