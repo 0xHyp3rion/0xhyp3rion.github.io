@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>0xHyp3rion Blog</title>
-    <link>https://0xhyp3rion.github.io/</link>
-    <description>Recent content on 0xHyp3rion Blog</description>
+    <title>How-Tos on 0xHyp3rion Blog</title>
+    <link>https://0xhyp3rion.github.io/tags/how-tos/</link>
+    <description>Recent content in How-Tos on 0xHyp3rion Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 27 Dec 2024 17:11:12 -0600</lastBuildDate>
-    <atom:link href="https://0xhyp3rion.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://0xhyp3rion.github.io/tags/how-tos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unravelling the Complex World of Cybersecurity</title>
       <link>https://0xhyp3rion.github.io/posts/navigating-cybersecurity/</link>
       <pubDate>Fri, 27 Dec 2024 17:11:12 -0600</pubDate>
       <guid>https://0xhyp3rion.github.io/posts/navigating-cybersecurity/</guid>
       <description>&lt;h3 id=&#34;a-primer-for-beginners-and-encouragement-for-junior-to-mid-level-soc&#34;&gt;A Primer for Beginners and Encouragement for Junior to Mid-Level SOC&lt;/h3&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The world of Cybersecurity is, in a nutshell, complex. There is no one size fits all solution to prevent against threats, and there is no one size fits all book, instructional video, or article that will help anyone wanting to succeed in the field. The technology field is dynamic, constantly changing, and within every broad category of tech exists broad specializations that each have their own specializations within the specialization. As technology grows, changes, and adapts, it&amp;rsquo;s important to be able to keep up to date with these changes and to understand the overall broad concepts where all of these puzzle pieces fit into. Cybersecurity is a specific specialization within the field of Information Technology that focuses on securing (and/or breaking) pieces of technology to make those systems more secure. Where do we start? How do we navigate the industry? And most importantly, how do we keep from falling behind?&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>OSINT Challenge</title>
-      <link>https://0xhyp3rion.github.io/posts/osint-challenge/</link>
-      <pubDate>Thu, 26 Dec 2024 10:50:22 -0600</pubDate>
-      <guid>https://0xhyp3rion.github.io/posts/osint-challenge/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;A little backstory to this post: I was socializing with some of my Cybersecurity friends in an online community when one of them (who was travelling for work at the time) posted the below image, and said &amp;ldquo;OSINT challenge! Where am I?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://0xhyp3rion.github.io/images/osint_challenge/osint_challenge_full.jpg&#34; alt=&#34;osint_challenge_full.jpg&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I get excited when these types of &amp;ldquo;challenges&amp;rdquo; are presented. They pique my curiosity, and it&amp;rsquo;s also a great little exercise in critical thinking. This writeup will elaborate on my thought process from start to finish and methodology to arrive at a conclusion, but a big disclaimer here is that it&amp;rsquo;s never a one-size-fits-all solution, and anyone&amp;rsquo;s results and process will differ. My ultimate hope is that if you&amp;rsquo;re new to OSINT, or looking to get other insights, that this will help to some degree.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
